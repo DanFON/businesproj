@@ -1,0 +1,188 @@
+{% load staticfiles %}
+{% block styles %}
+<style>
+.starter-template {
+  text-align: center;
+}
+
+
+ </style> 
+{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="../../../../favicon.ico"> 
+  
+      <title>eDuTecCumB</title>
+ 
+      <!-- jquery added 19Nov17 -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+      <script src="{% static "static/javascript/jquery-3.2.1.min.js" %}"></script> 
+      <script src="{% static "static/javascript/jquery-3.2.1.js" %}"></script>
+      <script src="{% static "static/javascript/ajax.js" %}"></script>
+      <script src="{% static "static/javascript/popper.min.js" %}"></script>
+      <script src="{% static "static/javascript/jquery.dataTables.min.js" %}"></script>
+      <script src="{% static "static/javascript/dataTables.bootstrap.min.css" %}"></script>
+      <script src="{% static "static/javascript/dataTables.checkboxes.min.js" %}"></script>
+      <script src="{% static "static/javascript/dataTables.buttons.min.js" %}"></script>
+      <script src="{% static "static/javascript/buttons.flash.min.js" %}"></script>
+      <script src="{% static "static/javascript/jszip.min.js" %}"></script>
+      <script src="{% static "static/javascript/pdfmake.min.js" %}"></script>
+      <script src="{% static "static/javascript/vfs_fonts.js" %}"></script>
+      <script src="{% static "static/javascript/buttons.html5.min.js" %}"></script>
+      <script src="{% static "static/javascript/buttons.print.min.js" %}"></script>
+      <!-- <script src="jQuery/jquery-1.11.2.min.js"></script> -->
+     
+      <!-- Bootstrap core CSS -->
+      <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+      <link href="{% static 'css/dataTables.bootstrap.min.css' %}" rel="stylesheet">
+      <link href="{% static 'css/dataTables.checkboxes.css' %}" rel="stylesheet">
+      <link rel='stylesheet' href="{% static 'css/style.css' %}">
+      <link rel ="stylesheet" href="{% static 'css/jquery.dataTables.min.css' %}">
+      <link rel ="stylesheet" href="{% static 'css/buttons.dataTables.min.css' %}">
+ 
+      <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+ 
+  
+      <!-- Custom styles for this template -->
+      <link href= "{% static 'css/jumbotron.cs' %}" rel="stylesheet">
+      <link rel='stylesheet' href='{% static "css/main.css" %}'/>
+ 
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="">eDuTecCumB, Consultancy Enterprise</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+          <form class="form-inline my-2 my-lg-0">
+            <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> -->
+            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Reload</button> -->
+            
+          </form>
+      </nav>
+
+      <html>
+        <body>
+
+            <!-- CREATE THE NAVIGATION BAR  1/10/2017-->
+    <div class ="navbaar navbar-default">
+        <div class="container">
+            {% include 'navbar.html' %}
+            {% include 'imgslide.html' %}
+            
+           
+            
+            
+                <!-- <div class="container"> -->
+                {% block starter-template %}
+                {% endblock %}
+            
+
+            <div class="border"></div>
+            <div class="wrap">
+                <div class="content">
+            <div class="content container">
+                <div class="row">
+                    <div class="col-md-8">
+                    {% block content %}
+                    
+                    {% endblock %}
+                    </div>
+                </div>
+            </div>
+ |<p> test page </p>
+        </body>
+      </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+<br />
+</main>
+
+
+<hr>
+<style type="text/css">
+footer{
+                          
+ width:100%;
+ min-height:100px;    
+ background-color:  #03030A; /* This color gets inverted color or you can add navbar inverse class in html */
+ padding-top: 1.5rem;
+ padding-bottom: 1.5rem;
+ } 
+ footer p{
+ margin-bottom: .25rem;
+ }
+</style> 
+
+<footer class="text-muted">
+    <div class ="container">    
+<p> 
+      <div><em>eDucTechCumB, Consultancy Enterprise Ltd,Flat 9 Cassio House,Manhattan Avenue, Watford, Hertfortshire, United Kingdom</em></div>
+      <div class="footer-company-details">
+      <div align="left">
+        <br>
+        <div class="container-fluid" style='margin-left:0px'>
+          <p> Follow us <a href="#" target="blank">Contact</a> |<a href="#" target="blank"> Facebook </a> | <a class="linked-in-icon" href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a></p>
+      </div>
+       </div>
+   <!-- <footer class="container-fluid" id="footer"> -->
+      <left>
+          <p><em>
+            Copyright &copy;
+             {% now 'Y' %}, 
+             eDucTechCumB. All rights reserved
+          </em></p> 
+        </left>
+  </footer> 
+
+
+
+
+
+      <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="{% static 'javascript/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'javascript/jquery-3.2.1.js' %}"></script>
+<script src="{% static 'javascript/popper.min.js' %}"></script>
+<script src="{% static 'javascript/bootstrap.min.js' %}"></script>
