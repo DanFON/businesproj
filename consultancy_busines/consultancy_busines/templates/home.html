@@ -8,117 +8,88 @@
 
 
  </style> 
-{% endblock %}
+{% endblock %} 
 
-{% block starter-template %}
-<div class="starter-template">
-    <h1>University College London</h1>
-    <p class="lead">UCL Institute of Neurology<br>Ryten Group</p>
-  </div>
-{% endblock %}
 
-{% block conten %}
-<div class= "container">
-  <div class="row">
-  <div class="col-sm-8 blog-main">
-   <a href="a"><img src="{% static '/media/profile_image/home.jpg' %}" class='img-responsive'/>
-  </div>
-  <div class="col-md-4">
-    <h2>Heading</h2>
-    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-  </div>
-  <div class="col-md-4">
-    {% if request.user.is_authenticated %}
-    <h3>Hello {{request.user}}</h3>
-
-    {% else %}
-    <form class="login" method="POST" action="{% url 'account_login' %}">
-    {% csrf_token %}
-      
-    
-    <div id="div_id_login" class="form-group"> <label for="id_login" class="control-label  requiredField">
-                    Login<span class="asteriskField">*</span> </label> <div class="controls "> <input name="login" autofocus="autofocus" required="" placeholder="Username or e-mail" class="textinput textInput form-control" id="id_login" type="text"> </div> </div> <div id="div_id_password" class="form-group"> <label for="id_password" class="control-label  requiredField">
-                    Password<span class="asteriskField">*</span> </label> <div class="controls "> <input name="password" required="" placeholder="Password" class="textinput textInput form-control" id="id_password" type="password"> </div> </div> <div class="form-group"> <div id="div_id_remember" class="checkbox"> <label for="id_remember" class=""> <input name="remember" class="checkboxinput" id="id_remember" type="checkbox">
-                        Remember Me
-                    </label> </div> </div>
-      <a class="btn btn-link button secondaryAction" href="{% url 'account_reset_password' %}">Forgot Password?</a>
-      <a class="btn btn-link button secondaryAction" href="{% url 'account_signup' %}">Signup</a>
-      <button class=" btn btn-default primaryAction" type="submit">Sign In</button>
-    </form>  
-    {% endif %}
-  </div>
-</div>
-{% endblock %}
-        
-<div class="row">
-    <div class="col-xs-6 col-md-3">
-      <a href="#" class="thumbnail">
-        <img src="..." alt="...">
-      </a>
-    </div>
-    
-  </div>
   {% block content %}
   <div class="container">
-  <h1><font color="blue">Home</font></h1>
+  <h1><font color="blue">Home</font></h1> 
  <html>
   <body>
+      
     
-    
-      <p>
-      <b><font color ="black">RYTEN LAB</font></b> is a research team in the department of Molecular Neuroscience within UCL Institute of Neurology (ION). The lab is located at Russell Square House.
-      
-      Ryten Lab is a interdisciplinary group brining together practical , experimental and methodological researchers in the areas of Medicine , Computer Science and Biology. The group has collaborations with clinicians and NHS hospital.
-      
-      The overall objective of the team is to develop numerical algorithms and methods of neurological brain diseases from patient data (clinical and genomic data). In order to achieve this objectives, we develop new models of data representation and applying statistical approaches that can intergrate different dataset samples acquired from patient post-
-      morten human tissues.  These data-set in form of tissues and genes are then expressed using different statistical and methodological approaches such as ; gene expression,  weighted co-expression network analysis (WGCNA). In turn these models will allow for adequate or to some extend  help in the identification of gene expression.  This process will allow us to acquire better understaing of the nature of the genes co-expressed and provide avenue to understand the disease progression which in turn will lead to new decision to support the diagnosis and design of clinical trials.
-      Models developed in the group are being created as software packages that could be use by researchers for further analysis.
-      </p>
+      <!-- <p>
+      <b><font color ="black">RYTEN LAB</font></b> content
+      content
+      </p> -->
 
-
-      <p>
-     <h5><b>Methodological concentrations:</b></h5>
-      <ul>
-      <li> Machine Learning</li>
-      <li> WGCNA </li>
-      <li> K-Means</li>
-      <li> Statistical processess (e.g gene correlation with the eigengene) </li>
-      <li> Graphical analysis of outcomes </li>
-      <li> eQTL analysis </li>
-      </ul>
+      <p align="justify">
+          DANIEL ONAH, Ph.D.
+          Biography
+          Dr Onah, a native born of Nigeria is an academic of strong international
+          standing in Computer Science and Computer Systems Engineering (Software
+          Systems). Dr Onah received his first degree in BSc. Computer Science from
+          University of Uyo in Nigeria and received the MSc (Eng.) degree in Computer
+          Systems Engineering with specialisation in Software Systems from the
+          University of East London, United Kingdom in 2011. He is currently a Teaching
+          Assistant in the Department of Computer Science, University of Warwick, United
+          Kingdom. Dr Onah is a member of the Intelligent & Adaptive Systems Research
+          Group in the Department of Computer Science at the University of Warwick. His
+          research focuses on educational technology and the design of e-learning systems
+          and adaptive software systems. He has designed a stand-alone MOOC platform
+          called eLDa as part of the tool for his Doctorate research investigation. Dr Onah
+          has produced over 18 publications to date and currently working on some
+          publications in-progress on his research. His research has been recognised
+          nationally and internationally by researchers, academics, professionals and have
+          been cited in several international journals and conference publications. Dr
+          Onah has chaired sessions at several international conferences, blind-peer-
+          reviewed academic papers (Journals & Conferences) and is a member of
+          programme committees for many conferences. Dr Onah in June 2017 visited
+          King’s College London, Instructional Design and Development, King’s Online
+          department as a visiting researcher. During Dr Onah’s visit, he initiated a
+          collaborative opportunity with the team on adaptive systems and other related
+          research interests. Dr Onah at the end of June 2017 visited University College
+          London, Department of Computer Science as a visiting researcher. The
+          discussion during Dr Onah’s visit was on his recent research on eLDa MOOC
+          and also on a collaborative project on the evaluation of learners acceptability of
+          an existing online system done in partnership with other European partner
+          institutions. We discussed potential project and a specific area of research
+          collaboration.
+          Dr Onah has been short-listed thrice for the Warwick Award for Teaching
+          Excellence over three consecutive academic years (2014/2015, 2015/2016 and
+          2016/2017). Dr Onah is an Associate Fellow of the Higher Education Academy
+          (AFHEA), United Kingdom. He has also successfully received the Postgraduate
+          Award Certificate in Teaching and Learning in Higher Education (PGA-TLHE)
+          from the Higher Education Academy (HEA), UK and The University of Warwick
+          in 2015. Dr Onah also received a Postgraduate Certificate in Transferable Skills
+          in Science (PGCTSS) from the University of Warwick in 2015. Dr Onah is a
+          member of Computing at School (CAS) for teachers in United Kingdom and the
+          Association for Learning Technology (ALT), where most of his members are
+          engaging in the eLDa platform he created for free. During his doctorate
+          training, Dr Onah, was the Postgraduate Research (PGR) Student Staff Liaison
+          Committee (SSLC) representative for international students (for two academic
+          years 2014/2015 and 2015/2016). During his Master’s program, he investigated
+          the application of formal methods in air traffic control systems, where he
+          developed an aircraft control simulation system. Dr Onah graduated top of his
+          class (top 5%) with Distinction from University of East London in 2011. He
+          worked briefly in the University of East London as a European Computer Driving
+          Licence (ECDL) Tutor and IT systems Engineer. He also worked as a SoftwareDeveloper 
+          (using Visual Studio .NET, C#, VB, website development) and as a
+          Database Developer/Administrator (using SQL, MySQL) with the Employability
+          and Enterprise Team (EET) of University of East London. During his Doctorate
+          programme he worked part time as a Temporary IT Technician with the Campus
+          Commercial Services Group (CCSG) at the University of Warwick. Dr Onah has a
+          wide range of industrial experience. One of his memorable achievement after
+          completing his MSc degree, was during the London 2012 Olympics games, Dr
+          Onah was among the 12-Man IT coordinators and was awarded a medal after
+          the games
      </p>
-
-     <p>
-      
-      <h5><b>Disease applications:</b></h5>
-
-      <ul>
-      <li> Parkinson’s diseases</li>
-      <li> Alzheimer’s disease</li>
-      <li> Demetia’s  disease</li>
-      </ul>
-     </p>
-     <p>
-        <h5><b> Group meeting </b></h5>
-        <img class="rounded-circle" src="{% static 'img/lab1.jpg' %}" alt="Generic placeholder image" width="250" height="250"> 
-        
-      
-        <img class="rounded-circle" src="{% static 'img/lab2.jpg' %}" alt="Generic placeholder image" width="250" height="250"> 
-         
-        
-        <img class="rounded-circle" src="{% static 'img/lab3.jpg' %}" alt="Generic placeholder image" width="250" height="250"> 
-  
-        <img class="rounded-circle" src="{% static 'img/lab4.jpg' %}" alt="Generic placeholder image" width="250" height="250"> 
-  
-        
-  </p>
-
+</div>
   </body>
  </html>
-  </div>
+  <!-- </div>
   </body>
- </html>
+ </html> -->
   {% endblock %}
 
 

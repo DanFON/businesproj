@@ -6,3 +6,13 @@ def home(request):
     context = {}
     templates = 'home.html'
     return render(request, templates, context)
+
+def repairs(request):
+    context = {}
+    templates = 'repairs.html'
+    return render(request, templates, context)
+
+def maintenance(request):
+    context = {}
+    templates = 'maintenance.html'
+    return render(request, templates, context)
