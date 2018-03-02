@@ -28,4 +28,6 @@ urlpatterns = [
     url(r'^$', consultancy_busines_views.home, name='home'),
     url(r'^support_services/$', consultancy_busines_views.support_services, name='support_services'),
     url(r'^maintenance/$', consultancy_busines_views.maintenance, name='maintenance'),
+    url(r'^ceo/$', consultancy_busines_views.ceo, name='ceo'),
+    url(r'^deputy_ceo/$', consultancy_busines_views.deputy_ceo, name='deputy_ceo'),
 ]

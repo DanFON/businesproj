@@ -16,3 +16,13 @@ def maintenance(request):
     context = {}
     templates = 'maintenance.html'
     return render(request, templates, context)
+
+def ceo(request):
+    context = {}
+    templates = 'ceo.html'
+    return render(request, templates, context)
+
+def deputy_ceo(request):
+    context = {}
+    templates = 'deputy_ceo.html'
+    return render(request, templates, context)
