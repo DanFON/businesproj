@@ -7,9 +7,9 @@ def home(request):
     templates = 'home.html'
     return render(request, templates, context)
 
-def repairs(request):
+def support_services(request):
     context = {}
-    templates = 'repairs.html'
+    templates = 'support_services.html'
     return render(request, templates, context)
 
 def maintenance(request):

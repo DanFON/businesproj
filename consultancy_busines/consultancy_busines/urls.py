@@ -26,6 +26,6 @@ from consultancy_busines import views as consultancy_busines_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', consultancy_busines_views.home, name='home'),
-    url(r'^repairs/$', consultancy_busines_views.repairs, name='repairs'),
+    url(r'^support_services/$', consultancy_busines_views.support_services, name='support_services'),
     url(r'^maintenance/$', consultancy_busines_views.maintenance, name='maintenance'),
 ]
