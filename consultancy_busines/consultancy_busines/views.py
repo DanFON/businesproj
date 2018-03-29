@@ -26,3 +26,13 @@ def deputy_ceo(request):
     context = {}
     templates = 'deputy_ceo.html'
     return render(request, templates, context)
+
+def about(request):
+    context = {}
+    templates = 'about.html'
+    return render(request, templates, context)
+
+def vision(request):
+    context = {}
+    templates = 'vision.html'
+    return render(request, templates, context)
